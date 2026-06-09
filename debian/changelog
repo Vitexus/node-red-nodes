@@ -1,0 +1,7 @@
+node-red-nodes (0.8.0+git20260609) unstable; urgency=medium
+
+  * Initial Debian packaging of selected nodes from the node-red-nodes
+    monorepo: node-red-node-ping, node-red-node-random, node-red-node-smooth,
+    node-red-node-pi-gpio and node-red-node-serialport.
+
+ -- Vítězslav Dvořák <info@vitexsoftware.cz>  Tue, 09 Jun 2026 14:30:00 +0200

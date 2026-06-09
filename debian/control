@@ -1,0 +1,75 @@
+Source: node-red-nodes
+Section: javascript
+Priority: optional
+Maintainer: Vítězslav Dvořák <info@vitexsoftware.cz>
+Build-Depends:
+ debhelper-compat (= 13),
+ appstream
+Standards-Version: 4.7.0
+Homepage: https://github.com/node-red/node-red-nodes
+Vcs-Browser: https://github.com/Vitexus/node-red-nodes
+Vcs-Git: https://github.com/Vitexus/node-red-nodes.git
+Rules-Requires-Root: no
+
+
+Package: node-red-node-ping
+Architecture: all
+Multi-Arch: foreign
+Depends:
+ ${misc:Depends},
+ node-red (>= 4.0)
+Description: Node-RED node to ping a remote server
+ A Node-RED node to ping a remote host, returning the round-trip time in
+ milliseconds or false when no response is received. Commonly used as a
+ keep-alive or reachability check in event-driven flows.
+
+
+Package: node-red-node-random
+Architecture: all
+Multi-Arch: foreign
+Depends:
+ ${misc:Depends},
+ node-red (>= 4.0)
+Description: Node-RED node to generate a random number
+ A Node-RED node that, when triggered, generates a random number between
+ two configurable values. Useful for testing flows and producing sample
+ data in event-driven applications.
+
+
+Package: node-red-node-smooth
+Architecture: all
+Multi-Arch: foreign
+Depends:
+ ${misc:Depends},
+ node-red (>= 4.0)
+Description: Node-RED node providing simple data smoothing algorithms
+ A Node-RED node that provides several simple smoothing algorithms for
+ incoming numeric data values, useful for cleaning up noisy sensor readings.
+
+
+Package: node-red-node-pi-gpio
+Architecture: all
+Multi-Arch: foreign
+Depends:
+ ${misc:Depends},
+ node-red (>= 4.0)
+Recommends:
+ python3-rpi.gpio | python3-rpi-lgpio
+Description: Node-RED node for Raspberry Pi GPIO
+ The basic Node-RED nodes for monitoring and controlling the GPIO pins of
+ a Raspberry Pi, using a small Python helper built on the RPi.GPIO library.
+ .
+ Only functions on Raspberry Pi hardware with the RPi.GPIO library present.
+
+
+Package: node-red-node-serialport
+Architecture: all
+Multi-Arch: foreign
+Depends:
+ ${misc:Depends},
+ node-red (>= 4.0),
+ node-serialport
+Description: Node-RED nodes to talk to serial ports
+ Node-RED nodes to send and receive data over local serial ports, built on
+ the serialport library. Useful for communicating with microcontrollers,
+ sensors and other RS-232/RS-485 hardware in event-driven flows.

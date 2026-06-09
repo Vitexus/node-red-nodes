@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="addon">
+  <id>io.github.vitexus.node_red_node_ping</id>
+  <extends>io.github.vitexus.node_red</extends>
+  <metadata_license>MIT</metadata_license>
+  <project_license>Apache-2.0</project_license>
+  <name>Node-RED Ping</name>
+  <summary>Node-RED node to ping a remote server</summary>
+  <description>
+    <p>
+      A Node-RED node to ping a remote host, returning the round-trip time
+      in milliseconds or false when no response is received. Commonly used
+      as a keep-alive or reachability check in event-driven flows.
+    </p>
+  </description>
+  <url type="homepage">https://github.com/node-red/node-red-nodes</url>
+  <url type="bugtracker">https://github.com/node-red/node-red-nodes/issues</url>
+  <url type="vcs-browser">https://github.com/Vitexus/node-red-node-ping</url>
+  <developer id="io.github.vitexus">
+    <name>VitexSoftware</name>
+  </developer>
+  <content_rating type="oars-1.1"/>
+  <releases>
+    <release version="0.3.3" date="2026-06-09"/>
+  </releases>
+</component>

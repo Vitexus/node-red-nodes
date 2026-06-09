@@ -1,0 +1,18 @@
+#!/usr/bin/make -f
+# Multi-binary source package built from the node-red-nodes monorepo.
+
+%:
+	dh $@
+
+override_dh_auto_configure:
+override_dh_auto_build:
+override_dh_auto_test:
+	appstreamcli validate --no-net debian/*.metainfo.xml
+
+override_dh_install:
+	dh_install
+	install -D -m 644 debian/node-red-node-ping.metainfo.xml debian/node-red-node-ping/usr/share/metainfo/io.github.vitexus.node_red_node_ping.metainfo.xml
+	install -D -m 644 debian/node-red-node-random.metainfo.xml debian/node-red-node-random/usr/share/metainfo/io.github.vitexus.node_red_node_random.metainfo.xml
+	install -D -m 644 debian/node-red-node-smooth.metainfo.xml debian/node-red-node-smooth/usr/share/metainfo/io.github.vitexus.node_red_node_smooth.metainfo.xml
+	install -D -m 644 debian/node-red-node-pi-gpio.metainfo.xml debian/node-red-node-pi-gpio/usr/share/metainfo/io.github.vitexus.node_red_node_pi_gpio.metainfo.xml
+	install -D -m 644 debian/node-red-node-serialport.metainfo.xml debian/node-red-node-serialport/usr/share/metainfo/io.github.vitexus.node_red_node_serialport.metainfo.xml

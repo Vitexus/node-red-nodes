@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="addon">
+  <id>io.github.vitexus.node_red_node_pi_gpio</id>
+  <extends>io.github.vitexus.node_red</extends>
+  <metadata_license>MIT</metadata_license>
+  <project_license>Apache-2.0</project_license>
+  <name>Node-RED Pi GPIO</name>
+  <summary>Node-RED node for Raspberry Pi GPIO</summary>
+  <description>
+    <p>
+      The basic Node-RED nodes for monitoring and controlling the GPIO pins
+      of a Raspberry Pi, using a small Python helper built on the RPi.GPIO
+      library.
+    </p>
+  </description>
+  <url type="homepage">https://github.com/node-red/node-red-nodes</url>
+  <url type="vcs-browser">https://github.com/Vitexus/node-red-node-pi-gpio</url>
+  <developer id="io.github.vitexus">
+    <name>VitexSoftware</name>
+  </developer>
+  <content_rating type="oars-1.1"/>
+  <releases>
+    <release version="2.0.7" date="2026-06-09"/>
+  </releases>
+</component>
