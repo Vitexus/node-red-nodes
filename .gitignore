@@ -9,3 +9,4 @@ debian/node-red-node-random/
 debian/node-red-node-smooth/
 debian/node-red-node-pi-gpio/
 debian/node-red-node-serialport/
+debian/*.debhelper.log
